@@ -91,13 +91,13 @@ Tested versions for base conda software environment:
 	module load mamba
 	```
 
-2. Create a new conda environment based on the mamba yaml file located in `workflow/envs/mamba.yml`
+2. Create a new conda environment based on the mamba yaml file located in `workflow/envs/snakemake-custom.yml`
 
 	```
-	conda env create -f workflow/envs/mamba.yml
+	mamba env create -f workflow/envs/snakemake-custom.yml
 	```
 
-3. The base environment with snakemake and mamba should now be available using `source activate mamba`
+3. The base environment with snakemake and mamba should now be available using `source activate snakemake-custom`
 
 ### STEP 2: (OPTION 2) Manual Conda Install
 
