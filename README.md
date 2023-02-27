@@ -85,13 +85,13 @@ Tested versions for base conda software environment:
 	```
 
 ### STEP 2: (OPTION 1) Conda Install from .yaml file
-1. (Optional) if you are on an HPC (i.e., quest), load the anaconda or miniconda module
+1. (Optional) if you are on an HPC (i.e., quest), load the anaconda or miniconda module (here we use mamba)
    
 	```
 	module load mamba
 	```
 
-2. Create a new conda environment based on the mamba yaml file located in `workflow/envs/snakemake-custom.yml`
+2. Create a new conda environment using the yaml file located in `workflow/envs/snakemake-custom.yml` with information of required channels and dependencies for your workflow. 
 
 	```
 	mamba env create -f workflow/envs/snakemake-custom.yml
